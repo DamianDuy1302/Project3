@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.productsList{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.searchInput{
+    margin-top: 6px;
+    width: 300px;
+    padding: 10px;
+}
+.searchButton{
+    padding: 10px;
+    cursor: pointer;
+}
+#products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.product{
+    width: 30%;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    position: relative;
+}
+.product__discount{
+    padding: 6px 10px;
+    background-color: orange;
+    display: inline-block;
+    border-radius: 6px;
+    position: absolute;
+    top: -1.5%;
+    right: -1.5%;
+}
+.product__image{
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    overflow: hidden;
+}
+.product__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.product__content{
+    padding: 10px;
+}
+.product__title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.product__price_and_stock{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+.product__price{
+    color: rgb(21, 171, 21);
+    font-weight: 600;
+}
+.product__stock{
+    color: rgb(55, 55, 244);
+    font-weight: 600;
+}
+.pagination{
+    display: flex;
+    margin-left: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 10px;
+}
+.pagination__pre, .pagination__next{
+    padding: 6px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.pagination__current{
+    margin-right: 10px;
+}
+.hidden{
+    display: none;
+}
+
+#product__selection{
+    padding: 6px 8px;
+    margin-top: 6px;
+
+}
+
+.product_choice{
+    display: block;
+    /* width: 100%; */
+    /* height: 50px; */
+    /* background-color: aqua; */
+    border-bottom: 1px solid #ccc;
+}
+
+#categoriesList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.category__item{
+    border: 1px solid #ccc;
+    min-height: 45px;
+    margin: 0px 10px 6px 0;
+    padding: 10px;
+    background-color: rgba(255, 166, 0, 0.754);
+    border-radius: 8px;
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./access/css/style.css">
+</head>
+<body>
+
+    <div id="categoriesList">
+
+    </div>
+
+
+    <div class="productsList">
+        <h2>Danh sách sản phẩm</h2>
+        <form class="searchForm">
+            <input type="text" name="input" placeholder="Search" class="searchInput"/>
+            <button type="submit" class="searchButton">Tìm kiếm</button>
+        </form>
+
+        <div class="selection">
+            <select name="product__selection" id="product__selection">
+                <option class="product_choice" value="">Mặc định</option>
+                <option class="product_choice" value="asc_price">Giá thấp đến cao</option>
+                <option class="product_choice" value="desc_price">Giá cao đến thấp</option>
+                <option class="product_choice" value="desc_discount">Giá giảm nhiều</option>
+            </select>
+        </div>
+
+        <ul id="products">
+            <li class="product">
+                <div class="product__image">
+                    <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="">
+                </div>
+                <div class="product__content">
+                    <div class="product__title">iPhone9</div>
+                    <div class="product__price_and_stock">
+                        <div class="product__price">549$</div>
+                        <div class="product__stock">Còn lại: 69</div>
+                    </div>
+                </div>
+                <div class="product__discount">
+                    50%
+                </div>
+            </li>
+            <li class="product">
+                <div class="product__image">
+                    <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="">
+                </div>
+                <div class="product__content">
+                    <div class="product__title">iPhone9</div>
+                    <div class="product__price_and_stock">
+                        <div class="product__price">549$</div>
+                        <div class="product__stock">Còn lại: 69</div>
+                    </div>
+                </div>
+            </li>
+            <li class="product">
+                <div class="product__image">
+                    <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="">
+                </div>
+                <div class="product__content">
+                    <div class="product__title">iPhone9</div>
+                    <div class="product__price_and_stock">
+                        <div class="product__price">549$</div>
+                        <div class="product__stock">Còn lại: 69</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pagination">
+        <button class="pagination__pre">Pre</button>
+        <div class="pagination__current">1</div>
+        <button class="pagination__next">Next</button>
+    </div>
+        
+    <script src="./access/js/script.js"></script>
+</body>
+</html>
